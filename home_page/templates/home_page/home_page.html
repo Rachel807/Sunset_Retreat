@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'base.html' %}
+
+{% block content %}
+<img src = "https://jooinn.com/images/sea-view-29.jpg"
+alt = "Sunset" width = 1400 height= 500>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Home Page</title>
+    <style>
+        p {font-family: Arial, Helvetica, sans-serif} 
+        p {margin: 25px;}
+    </style>
+</head>
+
+<h1 style="font-family: Arial, Helvetica, sans-serif, Helvetica, sans-serif; text-align: center;  background-color: rgb(45, 110, 104); color:white; ">The Sunset Retreat</h1>
+<br>
+
+<div class = "row">
+    
+    <div class= "col-md-6 background">
+        <p>The Sunset Retreat Hotel boasts beach side living with spectacular views of Clifton beach. <br> 
+            Located in the heart of Cape Town, this 4 star hotel is within walking distance to trendy restaurants and shops, and provides shuttles to all the must see
+            detsinations.<br>
+            Relax poolside or spend the day at the spa, this hotel will give you the summer holiday of your dreams!
+        </p>        
+    </div>
+
+    <div class= "col-md-6 background">
+        <img src="data:image/png;base64,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" alt="stars"
+        width = 200 height= 50>
+    </div>
+
+</div>
+
+<h4 style="text-align: center; background-color: rgb(45, 110, 104); color:white;">Accomodation</h4>
+<p>We have a range of luxurious suites for you to choose from. <br>
+    View these suites here:</p>
+<button class = "btn btn-secondary">  
+    <a style = "color: black" href="{% url 'home_page:detail' %}">Accomodation</a>
+</button>
+<br><br>
+
+<h4 style="text-align: center; background-color: rgb(45, 110, 104); color:white;">Amenities</h4>
+<p>Beautiful swimming pool overlooking the beach <br>
+Restaurant <br>
+Luxury Spa<br>
+Gym<br>
+Shuttle service to the Waterfront </p>
+
+<h4 style="text-align: center;background-color: rgb(45, 110, 104); color:white;">Make a reservation</h4>
+<p>To make a reservation, please find our contact details here:</p>
+<button class = "btn btn-secondary">  
+    <a style = "color: black" href="{% url 'home_page:contact' %}">Contact us</a>  
+
+</button> 
+
+<div class = "row">
+    
+    <div class= "col-md-4 background">
+        <img src = "https://www.jetsetter.com//uploads/sites/7/2018/04/9moWvSV8-1380x690.jpeg"
+        alt = "Exterior" width = 425 height= 225>
+    </div>
+
+    <div class= "col-md-4 background">
+        <img src = "https://www.hotel.co.za/images/beach-hotel-port-elizabeth-veranda-590x390.jpg"
+        alt = "Restaurant" width = 425 height= 225>
+    </div>
+
+    <div class= "col-md-4 background">
+        <img src = " https://traveler.marriott.com/wp-content/uploads/2019/08/W_SouthBeach_Pool.jpg"
+        alt = "Pool" width = 420 height= 225>
+    </div>
+</div>
+
+{% endblock content %}

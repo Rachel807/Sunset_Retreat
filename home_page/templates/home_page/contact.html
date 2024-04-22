@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<style>
+    h5 {margin: 25px;}
+    p {margin: 25px;}
+</style>
+
+<h1 style="font-family: Arial, Helvetica, sans-serif; text-align: center; background-color: rgb(45, 110, 104); color:white; ">Contact information</h1>
+
+<h5 style="font-family: Arial, Helvetica, sans-serif;">Email: thetravelco@gmail.com</h5>
+<h5 style="font-family: Arial, Helvetica, sans-serif;">Tel: 011 348 5823</h5>
+<h5 style="font-family: Arial, Helvetica, sans-serif;color: rgb(45, 110, 104)">We can't wait to hear from you!</h5>
+
+<br><br><br><br><br><br>
+<button class = "btn btn-secondary">  
+    <a style = "color: black" href="{% url 'home_page:home_page' %}">Back</a>
+</button>
+
+{% endblock content %}
