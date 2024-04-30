@@ -12,11 +12,38 @@ alt = "Sunset" width = 1400 height= 500>
     <style>
         p {font-family: Arial, Helvetica, sans-serif} 
         p {margin: 25px;}
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            }
+
+            li {
+            float: left;
+            }
+
+            li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            }
+            li a:hover {
+            background-color: #111;
+            }
+
     </style>
 </head>
 
 <h1 style="font-family: Arial, Helvetica, sans-serif, Helvetica, sans-serif; text-align: center;  background-color: rgb(45, 110, 104); color:white; ">The Sunset Retreat</h1>
 <br>
+<ul>
+    <li><a class="active" href="{% url 'home_page:detail' %}">Accomodation</a></li>
+    <li><a href="{% url 'home_page:contact' %}">Contact information</a></li>
+  </ul>
 
 <div class = "row">
     
@@ -38,11 +65,13 @@ alt = "Sunset" width = 1400 height= 500>
 <h4 style="text-align: center; background-color: rgb(45, 110, 104); color:white;">Accomodation</h4>
 <p>We have a range of luxurious suites for you to choose from. <br>
     View these suites here:</p>
-<button class = "btn btn-secondary">  
-    <a style = "color: black" href="{% url 'home_page:detail' %}">Accomodation</a>
-</button>
-<br><br>
 
+<div class="text-center"> 
+    <button class = "btn btn-secondary">  
+        <a style = "color: black" href="{% url 'home_page:detail' %}">Accomodation</a>
+    </button>
+</div>
+<br><br>
 <h4 style="text-align: center; background-color: rgb(45, 110, 104); color:white;">Amenities</h4>
 <p>Beautiful swimming pool overlooking the beach <br>
 Restaurant <br>
@@ -51,12 +80,13 @@ Gym<br>
 Shuttle service to the Waterfront </p>
 
 <h4 style="text-align: center;background-color: rgb(45, 110, 104); color:white;">Make a reservation</h4>
-<p>To make a reservation, please find our contact details here:</p>
-<button class = "btn btn-secondary">  
-    <a style = "color: black" href="{% url 'home_page:contact' %}">Contact us</a>  
-
-</button> 
-
+<p>In order to make a reservation, please find our contact details here:</p>
+<div class="text-center"> 
+    <button class = "btn btn-secondary">  
+        <a style = "color: black" href="{% url 'home_page:contact' %}">Contact us</a>  
+    </button> 
+</div>
+<br>
 <div class = "row">
     
     <div class= "col-md-4 background">
